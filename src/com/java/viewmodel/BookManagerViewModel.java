@@ -8,6 +8,7 @@ import com.java.observer.Subject;
 import com.java.repository.Catalog;
 import com.java.repository.CustomerRepository;
 
+import javax.imageio.stream.ImageInputStream;
 import java.util.*;
 import java.util.concurrent.Executor;
 

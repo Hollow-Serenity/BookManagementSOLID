@@ -1,5 +1,7 @@
 package com.java.entity;
 
+import com.java.entity.Author;
+
 /**
  * The type Book details.
  */

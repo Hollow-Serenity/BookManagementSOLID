@@ -7,17 +7,14 @@ import com.java.repository.Catalog;
 import com.java.repository.CustomerRepository;
 import com.java.template.Application;
 import com.java.viewmodel.BookManagerViewModel;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.List;
 import java.util.concurrent.Executor;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BookManagerApplicationTest {
 
