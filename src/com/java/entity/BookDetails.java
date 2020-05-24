@@ -1,7 +1,4 @@
 package com.java.entity;
-
-import com.java.entity.Author;
-
 /**
  * The type Book details.
  */
@@ -37,9 +34,11 @@ public class BookDetails {
         this.country = country;
     }
 
-    public BookDetails(){
+    public BookDetails() {
 
     }
+
+
     /**
      * Gets title.
      *
@@ -166,6 +165,15 @@ public class BookDetails {
         this.country = country;
     }
 
+
+    public int getKortingsPercentage(){
+        if(!getCountry().equals("England"))
+        return 0;
+        else
+        {
+            return 10;
+        }
+    }
     @Override
     public String toString() {
         return "BookDetails{" +
