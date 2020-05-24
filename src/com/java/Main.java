@@ -36,6 +36,23 @@ public class Main {
 //        }
         application.start();
 
+        //Large class. it held too much responsibility and also the static main function
+        //held the responsibility for everything with its flow.
+
+        /*
+          * Duplicate code: almost every input other than String input (zie BookmanagerViewModel)
+          * It may affect readability and ends with exception, application exit with exit codes rather than 0
+          * Which indicator apps not run normally (Zie BookManagerViewModel)
+         */
+
+        /*
+            Static methods: Statische methoden werken het beste als hulpprogramma's (denk aan System.Math) of andere zeer nauwgezette methoden.
+            Als je je kunt voorstellen dat je ooit overerving van objecten of polymorfisme voor je methode nodig hebt,
+            moet je de statische methode zeker overslaan en er een instantiemethode van maken.
+
+            Zie: BookManagerApplication.java, BookManagerViewModel.java, InputManager.java voor details.
+         */
+
 
     }
 }
